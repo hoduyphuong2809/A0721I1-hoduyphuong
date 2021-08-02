@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DP</title>
+    <style>
+        h2{
+            background-color:lightgreen;
+            color: blue;
+        }
+        form{
+            color: blue;
+        }
+        input[type="text"]{
+            position: absolute;
+            left: 100px;
+
+        }input[type="date"]{
+             position: absolute;
+             left: 100px;
+
+         }
+        label{
+            color: black;
+        }
+    </style>
+
+</head>
+<body bgcolor="#ffffe0">
+
+<h2 >ĐĂNG KÝ HỌC VIÊN</h2>
+<form action="https://codegym.vn/" method="post">
+    Họ và tên
+    <input type="text" name="name"><br>
+    Ngày sinh
+    <input type="date" name="date"><br>
+    Giới tính
+    <label><input type="radio" name="gender" value="male" >Nam</label>
+    <label><input type="radio" name="gender" value="female">Nữ</label>
+    <br>
+    Địa chỉ
+    <textarea cols="50" rows="3"></textarea><br>
+    Lớp
+    <select name="Choose class"  >
+        <option value="Class" >Chọn lớp </option>
+        <option value="A1">A1</option>
+        <option value="A2">A2</option>
+    </select>
+    <br>
+    Email
+    <input type="email" name="email">
+    <br>
+    Điện thoại
+    <input type="text" name="SĐT">
+    <br>
+    <input type="submit" value="Đăng ký">
+    <input type="reset" value="Nhập lại">
+</form>
+</body>
+</html>

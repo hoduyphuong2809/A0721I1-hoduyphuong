@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+
+
+
+    let status = 1;
+    let num = 3
+
+    let count = 0
+    let n = parseInt(prompt("Nhập vào n số nguyên tố đầu tiên:"))
+    alert(n +" Số nguyên tố đầu tiên là")
+
+    for ( let i = 1 ; i <=n ;  )
+    {
+        for ( let j = 2 ; j <= Math.sqrt(num) ; j++ )
+        {
+            if ( num%j == 0 )
+            {
+                status = 0;
+                break;
+            }
+        }
+        if ( status != 0 )
+        {
+            document.writeln(num) + "<br>"
+            i++;
+            count ++
+        }
+        status = 1;
+        num++;
+    }
+    document.writeln("số lượng các số nguyên tố là :"+ count);
+
+</script>
+</body>
+</html>

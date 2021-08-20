@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count=20;
+    let num1=0;
+    let num2=1;
+    for (let i=1;i<=count;i++){
+        let sum=num1+num2;
+        num1=num2;
+        num2=sum;
+        document.writeln(num1+",");
+        sum+=num1;
+    }
+</script>
+</body>
+</html>

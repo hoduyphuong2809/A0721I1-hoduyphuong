@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="text" id="dictionary">
+<input type="button" onclick="dtn()" value="sreach">
+<p id="rs"></p>
+<script>
+    function dtn() {
+        let arr1 = ["cha", "me", "anh", "chi"];
+        let arr2 = ["father", "mother", "brother", "sister"];
+        let input = document.getElementById("dictionary").value;
+        for (let i = 0; i < arr1.length; i++) {
+            if (input === arr1[i]) {
+                document.getElementById("rs").innerHTML = arr2[i];
+            } else if (input === arr2[i]) {
+                document.getElementById("rs").innerHTML = arr1[i];
+            }
+        }
+    }
+</script>
+</body>
+</html>

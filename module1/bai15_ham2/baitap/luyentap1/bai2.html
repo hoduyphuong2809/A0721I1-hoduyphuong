@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" oninput= "inCrease(this.value)" onchange="inCrease(this.value)";
+       placeholder="Nhap vao 1so";
+<p>
+    So sau khi duoc tang <span id="outNumber"></span>
+</p>
+<script>
+    function inCrease(num){
+    num=parseInt(num);
+    num++;
+    document.getElementById("outNumber").innerHTML=num;
+    }
+
+</script>
+</body>
+</html>

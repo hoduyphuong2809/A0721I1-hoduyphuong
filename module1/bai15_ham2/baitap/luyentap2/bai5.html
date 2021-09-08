@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function inPut(a,b,c) {
+        let min;
+        if (a<b && a<c){
+            min=a;
+        }else if (b<a && b<c){
+            min=b;
+        }else if (c<a && c<b){
+            min=c;
+        }
+        return min;
+    }
+    let n1=parseInt(prompt("a="));
+    let n2=parseInt(prompt("b="));
+    let n3=parseInt(prompt("c="));
+    alert(inPut(n1,n2,n3)+" là số nhỏ nhất");
+</script>
+</body>
+</html>

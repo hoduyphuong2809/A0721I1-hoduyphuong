@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function findStar(input) {
+        let arr1 = ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+        let arr2 = ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+        for (let i = 0; i <= arr1.length; i++) {
+            if (input === arr1[i]) {
+                arr1[i] = arr2[i];
+                return (arr2[i]);
+            }
+        }
+        alert("K tim thay ngoi sao !")
+    }
+
+    let inputNgoisao = prompt("nhap ten ngoi sao: ")
+    document.write(findStar(inputNgoisao));
+</script>
+</body>
+</html>

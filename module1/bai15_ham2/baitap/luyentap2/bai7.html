@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function reverseValue(a,b) {
+        a=a+b;
+        b=a-b;
+        a=a-b;
+        return [a,b];
+    }
+    let num1=parseInt(prompt("Input a"));
+    let num2=parseInt(prompt("Input b"));
+    alert(reverseValue(num1,num2));
+</script>
+</body>
+</html>

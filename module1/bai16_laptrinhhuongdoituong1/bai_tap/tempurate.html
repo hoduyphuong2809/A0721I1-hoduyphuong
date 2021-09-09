@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function Temperature(celsius){
+        this.celsius = celsius;
+        if (celsius >= (-273)) {
+            this.getCelsius = function () {
+                return celsius;
+            }
+            this.getFahrenheit = function () {
+                return (celsius * 1.8) + 32;
+            }
+            this.getKevin = function () {
+                return (celsius + 273.15);
+            }
+
+        } else {
+            return alert("nhiet do nho hon-273");
+        }
+    }
+    let temperature = new Temperature(25);
+    let fahrenheit = temperature.getFahrenheit();
+    let kevin = temperature.getKevin();
+    alert("Fahrenheit = " + fahrenheit + " Kevin = " + kevin);
+</script>
+</body>
+</html>

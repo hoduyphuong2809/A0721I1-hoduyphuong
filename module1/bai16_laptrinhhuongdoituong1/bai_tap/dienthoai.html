@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Mobile {
+        constructor() {
+            this.pin = 100;
+            this.status = true;
+            this.memoryDraft = [];
+            this.memorySent = [];
+            this.memoryImport = [];
+        }
+
+        checkStatus() {
+            if (this.status) {
+                console.log("on");
+            } else {
+                console.log("off");
+            }
+        }
+
+        turnOnOff() {
+            this.status = !this.status;
+        }
+
+        sacPin() {
+            this.pin = 100;
+        }
+
+        soanTin(String) {
+            this.memoryDraft = String;
+            this.pin--;
+        }
+
+        guiTin(mobile, message) {
+            this.soanTin(message)
+            mobile.nhanTinNhan(this.memoryDraft);
+            this.memorySent.push(this.memoryDraft);
+            this.memoryDraft = [];
+            this.pin--;
+        }
+
+        nhanTinNhan(message) {
+            this.memoryImport.push(message);
+            this.pin--;
+        }
+
+        hienThiTinDen() {
+            for (let i = 0; i < this.memoryImport.length; i++) {
+                console.log(this.memoryImport[i]);
+            }
+            this.pin--;
+        }
+
+        hienThiTinDaGui() {
+            for (let string of this.memoryImport) {
+                console.log(this.memorySent)
+            }
+        }
+    }
+
+    let ip = new Mobile();
+    let ss = new Mobile();
+    ip.guiTin(ip, " XinchaoDP");
+    ip.hienThiTinDen();
+    ss.guiTin(ss, "chaoDP");
+    ss.hienThiTinDen();
+
+</script>
+</body>
+</html>
